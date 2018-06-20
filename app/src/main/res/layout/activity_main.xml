@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="@drawable/lego1"
+    android:paddingLeft="30dp"
+    android:paddingRight="30dp">
+
+
+    <Button
+        android:id="@+id/oyuna_basla"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:background="@android:color/transparent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="10dp"
+android:textSize="20dp"
+        android:text="Start Game"
+        android:textStyle="bold"
+        android:textAppearance="@style/customfontstyle"
+
+        />
+
+
+
+    <Button
+        android:id="@+id/nasil_oynanir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:text="How To Play"
+        android:layout_below="@+id/oyuna_basla"
+        android:textAppearance="@style/customfontstyle"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/puan_ver"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+     android:layout_below="@+id/nasil_oynanir"
+        android:text="GIve Star"
+        android:textSize="20dp"
+        android:layout_marginRight="120sp"
+        android:textStyle="bold"
+        android:textAppearance="@style/customfontstyle"
+        android:layout_marginBottom="10dp"/>
+    <Button
+        android:id="@+id/top3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@android:color/transparent"
+        android:layout_below="@+id/puan_ver"
+        android:text="Hıgh Scores"
+        android:textSize="20dp"
+        android:layout_marginRight="120sp"
+        android:textStyle="bold"
+        android:textAppearance="@style/customfontstyle"
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:onClick="logout"
+        android:id="@+id/cikis"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/top3"
+        android:background="@android:color/transparent"
+        android:textSize="20dp"
+        android:text="Log out"
+        android:layout_marginRight="120sp"
+android:textStyle="bold"
+        android:textAppearance="@style/customfontstyle"
+        android:layout_marginBottom="10dp"/>
+</RelativeLayout>

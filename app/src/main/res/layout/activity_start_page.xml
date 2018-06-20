@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".StartPage"
+    android:background="@drawable/lego1"
+    android:paddingLeft="50dp"
+    android:paddingRight="50dp">
+
+
+    <TextView
+        android:id="@+id/oyun_sec_yazi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="26dp"
+        android:text="Please make your choIce !!!"
+        android:textAppearance="@style/customfontstyle"
+        android:textSize="25dp"
+        android:textStyle="bold"
+        android:textAlignment="center"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/oyun_sec_yazi"
+        android:orientation="vertical"
+        android:paddingTop="50dp">
+
+        <Button
+
+            android:id="@+id/mat_sec"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+         android:textAppearance="@style/customfontstyle"
+            android:text="MathematIc"
+
+            android:background="@android:color/transparent"
+            android:layout_marginBottom="50dp"
+            android:textSize="30dp"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"/>
+
+        <Button
+            android:id="@+id/ing_sec"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/transparent"
+           android:textAppearance="@style/customfontstyle"
+            android:text="EnglIsh"
+            android:textStyle="bold"
+            android:textSize="30dp"
+            android:layout_weight="1"
+            android:layout_marginBottom="50dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"/>
+
+    </LinearLayout>
+</RelativeLayout>

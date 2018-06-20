@@ -1,0 +1,172 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Register"
+    android:background="@drawable/background"
+    android:paddingRight="20dp"
+    android:paddingLeft="20dp">
+
+    <TextView
+        android:id="@+id/y_k_adi_yazi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="100dp"
+        android:text="Username :"
+
+                android:textColor="#ffff"
+        android:textStyle="bold"
+        />
+
+    <EditText
+        android:id="@+id/y_k_adi_giris"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/y_k_adi_yazi"
+        android:ems="10"
+        android:textColorHint="#ffff"
+        android:inputType="textPersonName"
+        android:drawableLeft="@drawable/ic_user_icon"
+        android:hint="username" />
+
+    <TextView
+        android:id="@+id/y_parola_yazi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/y_k_adi_giris"
+        android:text="Password :"
+
+        android:textColor="#ffff"
+
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/y_parola_giris"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/y_parola_yazi"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:hint="password"
+        android:textColorHint="#ffff"
+        android:drawableLeft="@drawable/ic_pass_icon"
+        android:textColor="#00ffe5"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:id="@+id/y_email_yazi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_centerVertical="true"
+        android:text="E-Mail :"
+        android:textColor="#ffff"
+
+        android:textStyle="bold"/>
+
+    <EditText
+        android:id="@+id/y_email_giris"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/y_email_yazi"
+        android:layout_centerHorizontal="true"
+        android:ems="10"
+        android:hint="email"
+        android:textColorHint="#ffff"
+        android:drawableLeft="@drawable/ic_confirm_icon"
+        android:inputType="textEmailAddress" />
+
+    <Spinner
+        android:id="@+id/spin_sehir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="160dp"
+        android:entries="@array/CityNames"
+        android:textColor="#00ffe5"
+
+        android:textStyle="bold"
+
+
+        />
+
+    <Spinner
+        android:id="@+id/spin_yil"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/spin_sehir"
+        android:layout_marginTop="-150dp"
+        android:entries="@array/Years"
+
+        android:textColor="#00ffe5"
+        android:textStyle="bold"/>
+<RadioGroup
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_below="@+id/spin_yil"
+    android:orientation="horizontal"
+    android:id="@+id/radiogrup"
+    android:paddingLeft="70dp"
+    android:paddingRight="20dp">
+
+    <RadioButton
+        android:id="@+id/cin_erk"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:text="Male"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+
+        android:layout_weight="1"/>
+
+    <RadioButton
+        android:id="@+id/cin_kız"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@+id/cin_erk"
+        android:text=" Female "
+
+        android:textColor="#ffff"
+android:textStyle="bold"
+        android:layout_weight="1"/>
+
+</RadioGroup>
+
+
+    <Button
+
+        android:id="@+id/regbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/radiogrup"
+        android:layout_centerHorizontal="true"
+        android:text="Register"
+        android:textStyle="bold"
+        android:textColor="#ffff"
+        android:background="@drawable/login_shape"
+        />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="10dp"
+        android:text="Do you have an account? Log In"
+        android:textColor="#ffff"
+        android:textStyle="bold"
+        android:clickable="true"/>
+
+
+</RelativeLayout>

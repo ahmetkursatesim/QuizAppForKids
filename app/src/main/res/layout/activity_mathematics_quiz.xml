@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/lego1"
+    >
+
+
+    <LinearLayout
+        android:id="@+id/quiz_isim"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:onClick="backQuestion"
+            android:id="@+id/geri"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+
+            android:background="?android:selectableItemBackground"
+            android:src="@drawable/geri" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+
+            android:textSize="30dp"
+            android:text="MathematIc"
+            android:textAlignment="center"
+
+            android:textAppearance="@style/customfontstyle"
+            android:layout_weight="13"
+             />
+
+        <ImageButton
+            android:onClick="NextQuestion"
+            android:id="@+id/ileri"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:background="?android:selectableItemBackground"
+            android:src="@drawable/ileri"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/quiz_isim"
+        android:orientation="vertical"
+        android:padding="10dp">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:padding="10dp">
+
+
+            <TextView
+                android:id="@+id/soru_sayisi"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Soru"
+
+                android:textAppearance="@style/customfontstyle"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/Puan"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentTop="true"
+                android:gravity="center"
+                android:padding="3dp"
+                android:text="Puan "
+
+                android:textAppearance="@style/customfontstyle"
+                android:textStyle="bold" />
+
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/mat_soru"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:background="@drawable/soru_sekil"
+            android:text="SORULAR"
+
+            android:textAlignment="center"
+            android:textSize="25dp"
+            android:padding="5dp"
+            />
+
+        <Button
+            android:onClick="dogruCevapMi_A"
+            android:id="@+id/A"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+
+            android:background="@drawable/buton_sekil"
+
+            android:text="A"
+
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/B"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/buton_sekil"
+            android:onClick="dogruCevapMi_B"
+            android:text="B"
+
+            android:textSize="20sp" />
+        />
+
+        <Button
+            android:onClick="dogruCevapMi_C"
+            android:id="@+id/C"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+            android:background="@drawable/buton_sekil"
+            android:text="c"
+
+            android:textSize="20sp" />
+        />
+
+    </LinearLayout>
+
+</RelativeLayout>

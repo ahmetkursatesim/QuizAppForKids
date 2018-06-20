@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Rules"
+    android:background="@drawable/background">
+
+    <TextView
+        android:id="@+id/kural_baslik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="39dp"
+        android:text="Rules
+"
+        android:textAlignment="center"
+        android:textColor="#ffff"
+
+        android:textSize="25dp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:layout_below="@id/kural_baslik"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#ffff"
+        android:text="ExerChild adlı oyun 7-11 yaş aralığındaki çocukların hem bilgi seviyesini ölçer hem de eğlenceli vakit geçirmesini sağlar. Matematik ve  İngilizce olmak üzere toplam 2bölüm içermektedir. Her bölümde toplam 30 soru vardır. Sorular kolaydan zora doğru sıralanmıştır. Yarışmacı bildiği her soru için 1 puan kazanır, eğer soruyu yanlış bilirse puanı düşmez. Eğer yarışmacı soruyu boş bırakırsa geri döndüğünde boş bıraktığı soruyu cevaplayamaz. Tüm öğrencilere başarılar dileriz."/>
+</RelativeLayout>

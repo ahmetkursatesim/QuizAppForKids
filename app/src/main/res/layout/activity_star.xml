@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".Star"
+    android:background="@drawable/lego1">
+
+
+    <TextView
+        android:id="@+id/yildiz_yazi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="200dp"
+        android:text="How did you find our application?"
+        android:textColor="#000000"
+        android:textAppearance="@style/customfontstyle"
+        android:textSize="15dp"
+        android:textStyle="bold"/>
+    <RatingBar
+        android:id="@+id/yildiz_sayi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="200dp"
+        />
+
+    <TextView
+        android:id="@+id/yildiz_goster"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="165dp"
+        android:textColor="#00ffe5"
+        android:text="" />
+</RelativeLayout>
